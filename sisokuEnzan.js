@@ -1,19 +1,19 @@
 var sisokuEnzan = {
   A: 0,
   B: 0,
-  wa: () => {
+  wa: function() {
     return sisokuEnzan.A + sisokuEnzan.B;
   },
-  sa: () => {
+  sa: function() {
     return sisokuEnzan.A - sisokuEnzan.B;
   },
-  seki: () => {
+  seki: function() {
     return sisokuEnzan.A * sisokuEnzan.B;
   },
-  sho: () => {
+  sho: function() {
     return sisokuEnzan.A / sisokuEnzan.B;
   },
-  amari: () => {
+  amari: function() {
     return sisokuEnzan.A % sisokuEnzan.B;
   }
 }

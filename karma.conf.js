@@ -28,8 +28,13 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+        // '**/*.js': ['eslint']
     },
-
+    plugins: [
+        'karma-eslint',
+        'karma-jasmine',
+        'karma-phantomjs-launcher'
+    ],
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
@@ -66,5 +71,6 @@ module.exports = function(config) {
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity
+
   })
 }
